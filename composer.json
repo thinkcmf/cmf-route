@@ -1,6 +1,6 @@
 {
     "name": "thinkcmf/cmf-route",
-    "description": "ThinkCMF6 route",
+    "description": "thinkcmf6 route",
     "license": "Apache-2.0",
     "authors": [
         {
@@ -20,7 +20,13 @@
             "think\\": "src"
         },
         "classmap": [
-            "src/Route.php"
+            "src/App.php",
+            "src/Route.php",
+            "src/Http.php",
+            "src/route/Rule.php",
+            "src/route/Url.php",
+            "src/route/dispatch/Controller.php",
+            "src/route/dispatch/Url.php"
         ]
     }
 }
