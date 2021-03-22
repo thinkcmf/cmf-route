@@ -66,6 +66,7 @@ class Controller extends Dispatch
         $app->setNamespace($appNamespace . '\\' . $appName);
 
         // 获取操作名
+        $result[2]        = stristr($result[2], '?', true) ?: $result[2];
         $this->actionName = strip_tags($result[2] ?: $this->rule->config('default_action'));
 
         // 设置当前请求的控制器、操作
